@@ -132,15 +132,18 @@
 # print ("This is the boy's dog. \nHis name is Jack!")
 
 
-from cgi import print_arguments
-from ctypes import Structure
-from dataclasses import replace
-from ntpath import join
-from posixpath import split
-from tkinter import E
-from tracemalloc import stop
-from turtle import title
-from unittest import result
+# from cgi import print_arguments
+# from ctypes import Structure
+# from dataclasses import replace
+# from locale import CODESET
+# from ntpath import join
+# from posixpath import split
+# import string
+# from subprocess import list2cmdline
+# from tkinter import E
+# from tracemalloc import stop
+# from turtle import title
+# from unittest import result
 
 
 # name = "Emmanuel"
@@ -369,7 +372,13 @@ from unittest import result
 # a = list(map(lambda f:f.upper(), my_str))
 # print("".join(a))
 
+from calendar import c
+from ctypes import Structure
+from msilib import Table
+from os import remove
 import random
+from re import A
+from typing import KeysView
 
 # a = [1,2,3,4,5,6,7]
 # random.shuffle(a)
@@ -607,17 +616,17 @@ import random
 # print (a)  
 
 
-num = int(input("Please enter a number to check if its prime : "))
+# num = int(input("Please enter a number to check if its prime : "))
     
-primenum = [a for a in range (98,176)]
+# primenum = [a for a in range (98,176)]
          
-         if a <=1 and a % a == 0
-return False
+#          if a <=1 and a % a == 0
+# return False
 
-if primenum (num):
-    print(f"{num} is a prime number")
-else:
-    print(f"{num} is not a prime number")
+# if primenum (num):
+#     print(f"{num} is a prime number")
+# else:
+#     print(f"{num} is not a prime number")
 
 
 
@@ -635,3 +644,324 @@ else:
 #     print(f"{num} is a prime number")
 # else:
 #     print(f"{num} is not a prime number")
+
+#Nested List
+
+# a = [1,2,4,7,[5,9,[8,7],4],3,7]
+
+# b = a[4][1] + a[4][2][0]
+# print(b)
+
+# import random
+# a = [i for i in range (10)]
+
+# random.shuffle(a)
+# print(a)
+
+# print (sorted(a, reverse=True))
+
+# a.reverse()
+# print(a)
+
+#case study 1
+# a = [4,3,2,1,8]
+# b = a 
+# b[3] = 7
+
+# print (b)
+# print(a)
+
+
+# #case study 2
+
+#copy function 
+
+# a = [4,3,2,1,8]
+
+# b = a.copy()
+# b[3] = 7
+
+# print (b)
+# print(a)
+
+# a = [1,2,3,4]
+# b = [1,2,3,4]
+
+# print(a==b)
+# print(a is b)
+
+# remove function - use remove when you know the value you want to change.
+# pop function - uses index to remove value. remove by the index.
+
+# append function is used to add new values to a list
+
+# a = [1,2,3,4]
+# b= []
+
+# b=a
+
+# b.insert(2, 10)
+
+# print(b)
+
+# import random
+# a = [i for i in range 10]
+
+# random.shuffle
+# print(a.extend())
+
+
+# import random
+# a = [i for i in range (10)]
+
+# random.shuffle(a)
+# print(a)
+
+# print (sorted(a, reverse=True))
+
+# a.reverse()
+# print(a)
+
+# List1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+
+# List2 = List1.remove("")
+
+# print(List1)
+
+
+# List1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+
+# new_list = [x for x in List1 if x]
+# print(new_list)
+
+
+# import random as r
+
+# def otpgen (n):
+#     otp= ""
+#     for i in range (n):
+#         otp+=str(r.randint(1,9))
+#     print ("Your One Time Password is")
+#     print(otp)
+
+# otpgen()
+
+# OTP GENERATION CODES
+
+# def generate_otp (n):
+#     otp = ""
+#     for i in range (n):
+#         otp+=str(random.choice(range(10)))
+#     return otp
+
+# print(generate_otp(6))
+
+# import random
+# import string
+
+# def generate_otp (n):
+#     """Generates n*2 length of otp"""
+
+#     otp = []
+#     for i in range(n):
+#         otp.append(str(random.choice(range(10))))
+#         otp.append(random.choice(string.ascii_letters))
+
+#         random.shuffle(otp)
+#         return "".join(otp)
+
+#     print(generate_otp(6))
+
+# Tupple is a immutable data structure that has its elements seperated by comma. enclosed in parethesis. 
+# it has 2 methods. count 
+
+#A set is an unordered data structure that has its elements seperated by comma enclosed in {}. A set cannot contain duplicate values. 
+#Set data structure is used when you want to have a collection of distintc data. 
+
+# a = { 1,2,3,4,5 }
+# # a.discard(7)
+# # a.remove(7)
+# a.clear()
+
+# print(a)
+
+
+# a = {1,2,3,4,5,6}
+# b = {2,4,6,8,10}
+
+# # c = a.union(b)
+
+# # print(c)
+
+# c = a.intersection(b)
+
+# a.intersection_update(b)
+
+# print(c)
+
+# SET Methods
+
+# b = {1,4,3,1,2,5,6}
+
+# b.discard(3)
+# # b.remove(3)
+
+# print(b)
+
+# a = {3,4,7,8,10,17}
+# b = {2,4,6,8,10,12}
+
+# # c = a.union(b)
+
+# a.update(b)
+
+# print(a)
+
+# a = {3,4,7,8,10,17}
+# b = {2,4,6,8,10,12}
+
+# # c = a.intersection(b)
+# a.intersection_update(b)
+
+# print(a)
+
+
+# a = {3,4,7,8,10,17}
+# b = {2,4,6,8,10,12}
+
+# # c = a.difference(b)
+# a.difference_update(b)
+
+# print (a)
+
+# a = {3,4,7,8,10,17}
+# b = {2,4,6,8,10,12}
+
+# # c = a.symmetric_difference(b)
+# a.symmetric_difference_update(b)
+
+# print(a)
+# Classwork Set
+# print ( "Enter your numbers for English Newspaper: ")
+# English_N = input(" :> ")
+# English_N_Set = set(English_N)
+
+# print(English_N_Set)
+
+# print ( "Enter your numbers for French Newspaper: ")
+# French_N = input(" :> ")
+# French_N_Set = set(French_N)
+
+# print(French_N_Set)
+
+# # English_N = {3,4,5,7,10}
+# # French_N = {3,1,5,9,10,11}
+
+# Only_English = English_N_Set - French_N_Set
+
+# Only_French = French_N_Set - English_N_Set
+
+# Unique_Students = Only_English.union(Only_French)
+
+# print (Only_English)
+# print (Only_French)
+
+# print(Unique_Students)
+
+# Desmond classwork correction
+
+# eng = input ("Enter the total number of the students \n::>")
+# eng_set = set(input("Enter the roll number of the english student subscribers\n::>").split())
+
+# frn = input ("Enter the total number of the students \n::>")
+# frn_set = set(input("Enter the roll number of the French student subscribers\n::>").split())
+
+# print(len(frn_set.symmetric_difference(eng_set)))
+
+
+# print (name.count(E))
+
+#  def mean (arr):
+#     mean_value = sum(arr)/len(arr)
+#     return round (mean_value, 2)
+
+# print("Calculate the mean")
+# print("Enter your number seperated by a comma: ")
+# vals = input(" :> ").split(',')
+
+# print (vals)
+# mapped = list(map(int,vals))
+
+# Dictionaries - a dictionairy is a collection of data enclosed in curly braces represented key value pairs, 
+# they are seprated by commas, they are unordered that is not ordered. Elements in the 
+# dictionaries are accessed by their keys.
+
+# # - The key of your dictionary can be any imutable data type or data Structure. However, the value can be any 
+# data type or data Structure
+
+# dict_A = {'A':1, 'D':2, 'C':3}
+
+# print(dict_A["A"])
+
+# reassigning 
+
+# dict_A = {'A':1, 'D':2, 'C':3}
+
+# dict_A["D"] = 20
+# dict_A["new_key"] = "new_value"
+
+# # print(dict_A)
+
+# print(dict_A["f"])
+
+# Dictionairy methods
+# .get method is used to get the value of a dictionary key. If they key doesnt exist the get method will return 
+# none rather than throw in an error. It is also possible to add a default value to the get method.
+
+# dict_A = {'A':1, 'D':2, 'C':3}
+# dict_A["D"] = 20
+# dict_A["new_key"] = "new_value"
+
+# # print(dict_A)
+
+# print(dict_A.get("desmond", "This key does not exist."))
+# print(dict_A.get("A", "This key does not exist."))
+# print(dict_A.get("A", "D"))
+
+# CREATE A FREQUENCY DISTRIBUTION Table
+
+# my_arr = [random.choice(range(10)) for i in range (100000000)]
+
+# a = {}
+# for ele in set(my_arr):
+#     a[ele] = my_arr.count(ele)
+
+# print(a)
+
+# print()
+
+# freg = {}
+
+# for ele in my_arr:
+#   freg[str(ele)] = freg.get(str(ele),0)+1
+
+# print (freg)
+
+# freg_using_count = {}
+# for ele in set (my_arr):
+#     freg_using_count[ele] = my_arr.count(ele)
+
+# print(freg_using_count)
+
+
+
+# .keys() gives us a list of the Keys
+# .values() gives us a list of the values 
+# .items will give us a list of keys and values as a tupple 
+
+# x = 0 
+# for i in range(10):
+#     for j in range (-1, 10, -1):
+#         x+= 1
+#         print(x)
+

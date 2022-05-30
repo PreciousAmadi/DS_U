@@ -1,6 +1,31 @@
 
-def print_lyric():
-    print(" I'm a lumberjack and i'm okay")
-    print ("I sleep all night and i work all day")
+# def print_lyric():
+#     print(" I'm a lumberjack and i'm okay")
+#     print ("I sleep all night and i work all day")
 
-def ssh()
+# def ssh()
+
+import random 
+import string
+
+# def generate_otp (n):
+#     """Generates n*2 length of otp"""
+
+#     otp = []
+#     for i in range(n):
+#         otp.append(str(random.choice(range(10))))
+#         otp.append(random.choice(string.ascii_letters))
+
+#         random.shuffle(otp)
+#         return "".join(otp)
+
+#     print(generate_otp(3))
+
+
+def generate_otp (n):
+    otp = "0"
+    for i in range (n):
+        otp+=str(random.choice(range(10)))
+    return otp
+
+print(generate_otp(9))
